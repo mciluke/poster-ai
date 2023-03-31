@@ -4,14 +4,14 @@ v-app
     v-container
       ui-header
       ui-hero
-      ui-hairstyle
+      ui-prompt
       ui-footer
 </template>
 
 <script setup lang="ts">
-const title = 'Change Hairstyle AI'
-const description = 'Get a new hairstyle in seconds.'
-const image = 'https://changehairstyleai.com/cover.jpg'
+const title = 'Poster AI'
+const description = 'Get a new poster in seconds.'
+const image = ''
 
 useServerSeoMeta({
   title,
@@ -25,7 +25,7 @@ useServerSeoMeta({
   twitterTitle: title,
   twitterDescription: description,
   twitterImage: image,
-  twitterCreator: 'pontusaurdal'
+  twitterCreator: ''
 })
 </script>
 

@@ -1,17 +1,27 @@
 <template lang="pug">
-header(:class="{ xs }")
+header.align-center(:class="{ xs }")
   v-img(src="/img/logo.svg")
-  .text-h5 Change Hairstyle AI
+  .text-h5 Poster AI
   v-spacer
   v-btn(
     :size="size"
     :height="height"
-    href="https://github.com/Pwntus/change-hairstyle-ai"
+    href=""
     target="_new"
     color="secondary"
-    prepend-icon="mdi-github"
+    prepend-icon="mdi-login-variant"
+    class="mr-4"
     flat rounded
-  ) Star on Github
+  ) Login
+  v-btn(
+    :size="size"
+    :height="height"
+    href=""
+    target="_new"
+    color="secondary"
+    prepend-icon="mdi-cart-outline"
+    flat rounded
+  ) Cart
 </template>
 
 <script setup lang="ts">

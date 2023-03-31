@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const { image, hairstyle, shade, color } = await readBody(event)
+  const { prompt } = await readBody(event)
 
   // Create prediction
   const response = await fetch('https://api.replicate.com/v1/predictions', {
@@ -10,12 +10,13 @@ export default defineEventHandler(async (event) => {
     },
     body: JSON.stringify({
       version:
-        'b95cb2a16763bea87ed7ed851d5a3ab2f4655e94bcfb871edba029d4814fa587',
+        '9936c2001faa2194a261c01381f90e65261879985476014a0a37a334593a05eb',
       input: {
-        image,
-        editing_type: 'both',
-        hairstyle_description: hairstyle,
-        color_description: `${shade} ${color}`
+        prompt,
+        num_outputs: 4,
+        // num_inference_steps: 500
+        // width: 1024,
+        // height: 768
       }
     })
   })

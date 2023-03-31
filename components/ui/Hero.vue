@@ -1,8 +1,9 @@
 <template lang="pug">
 section
   .text-h2
-    | Change your hairstyle with AI.
-    span For everyone.
+    | Create and print
+    //- span AI
+    | AI generated art
 </template>
 
 <style lang="stylus" scoped>

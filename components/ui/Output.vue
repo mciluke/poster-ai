@@ -1,8 +1,8 @@
 <template lang="pug">
 section
   template(v-if="isSuccess")
-    .text-h5 {{ props.output?.hairstyle }}, {{ props.output?.shade }} {{ props.output?.color }}
-    img(:src="props.output.output || ''")
+    .text-h5 {{ 'Poster ID ' + props.output?.id.substring(0, 6) }}
+    img(v-for="(image, ind) in props.output.output || ''" :src="props.output.output[ind] || ''")
   template(v-else-if="isFail")
     .text-h5 Something failed. Try again.
   template(v-else)
