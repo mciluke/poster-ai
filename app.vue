@@ -5,7 +5,7 @@ v-app
       ui-header
       ui-hero
       ui-prompt
-      ui-footer
+      //- ui-footer
 </template>
 
 <script setup lang="ts">
