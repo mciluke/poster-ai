@@ -1,1 +1,1 @@
-Poster AI (Nuxt, Vue, Vuetify, Replicate, Railway)
+Poster AI (Nuxt, Vue, Vuetify, Replicate, Vercel)
